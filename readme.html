@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Example Plugin</title>
+</head>
+<body>
+<h1>Example Plugin</h1>
+<p>This is an example plugin, written against Openfire 4.2 using the Maven build system</p>
+<h2>Structure</h2>
+<dl>
+    <dt>Top Level</dt>
+    <dd>The top level directory may contain a read.html (this file), a changelog.html, a logo_large.git (and logo_small.gif), and finally the plugin.xml - the latter being required.</dd>
+    <dt>src/main/java</dt>
+    <dd>This contains sources.</dd>
+    <dt>src/main/i18n</dt>
+    <dd>This contains internationalisation files. This example ships with exampleplugin_i18n.properties - the default language (expected to be English), and exampleplugin_i18N_fr.properties for a sample French translation. Specific language translation files may be incomplete, and may be specific to a full locale (such as fr_CA for Quebecois).</dd>
+    <dt>src/main/web</dt>
+    <dd>This directory contains JSP and assets for the admin console. The plugin.xml in the top level includes how to link these pages into the Admin Console itself.</dd>
+    <dt>src/main/database</dt>
+    <dd>Contains plugin database schema and any upgrade scripts</dd>
+</dl>
+</body>
+</html>
