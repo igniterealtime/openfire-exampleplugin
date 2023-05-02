@@ -16,6 +16,15 @@
         <openfire.version>4.2.0</openfire.version>
     </properties>
 
+    <repositories>
+        <!-- Where dependencies are obtained (such as the parent project). -->
+        <repository>
+            <id>igniterealtime</id>
+            <name>Ignite Realtime Repository</name>
+            <url>https://igniterealtime.org/archiva/repository/maven/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.igniterealtime.openfire</groupId>
