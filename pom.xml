@@ -13,7 +13,7 @@
     <version>4.7.4-SNAPSHOT</version>
 
     <properties>
-        <openfire.version>4.7.5</openfire.version>
+        <openfire.version>4.8.1</openfire.version>
     </properties>
 
     <repositories>
