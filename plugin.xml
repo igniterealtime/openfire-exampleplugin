@@ -6,7 +6,7 @@
    <description>An example plugin that does nothing interesting</description>
    <author>Surevine</author>
    <version>4.2.1-SNAPSHOT</version>
-   <date>12/15/2017</date>
+   <date>2024-09-12</date>
    <minServerVersion>4.0.0</minServerVersion>
     <!-- And if it won't work after:
    <maxServerVersion>4.3.0</maxServerVersion>
