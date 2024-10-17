@@ -11,7 +11,36 @@
     <groupId>org.igniterealtime.openfire.plugins</groupId>
     <artifactId>exampleplugin</artifactId>
     <version>4.9.0-SNAPSHOT</version>
+    <name>Openfire Plugin Example</name>
+    <description>An example plugin that adds own tab to Admin Console</description>
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/igniterealtime/openfire-exampleplugin/issues</url>
+    </issueManagement>
 
+    <scm>
+        <connection>scm:git:https://github.com/igniterealtime/openfire-exampleplugin.git</connection>
+        <developerConnection>scm:git:git@github.com:igniterealtime/openfire-exampleplugin.git</developerConnection>
+        <url>https://github.com/igniterealtime/openfire-exampleplugin</url>
+    </scm>
+    <developers>
+        <developer>
+            <name>John Doe</name>
+            <roles>
+                <role>Original Author</role>
+            </roles>
+            <email>John.Doe@example.com</email>
+            <timezone>+1</timezone>
+            <organization>Ignite Realtime</organization>
+            <organizationUrl>https://www.igniterealtime.org</organizationUrl>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
     <properties>
         <openfire.version>4.9.0</openfire.version>
     </properties>
