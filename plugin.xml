@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin>
-   <class>org.igniterealtime.openfire.exampleplugin.ExamplePlugin</class>
-   <name>Openfire Maven Plugin Example</name>
-   <description>An example plugin that does nothing interesting</description>
-   <author>Surevine</author>
-   <version>4.2.1-SNAPSHOT</version>
-   <date>2024-09-12</date>
-   <minServerVersion>4.0.0</minServerVersion>
+    <!-- Main plugin class -->
+    <class>org.igniterealtime.openfire.exampleplugin.ExamplePlugin</class>
+    <!-- Plugin meta-data -->
+    <name>${project.name}</name>
+    <description>${project.description}</description>
+    <author>${project.developers[0].name}</author>
+    <licenseType>apache</licenseType>
+    <version>${project.version}</version>
+    <!-- set release date here -->
+    <date>2024-09-12</date>
+    <minServerVersion>4.0.0</minServerVersion>
     <!-- And if it won't work after:
-   <maxServerVersion>4.3.0</maxServerVersion>
-   -->
+    <priorToServerVersion>4.3.0</priorToServerVersion>
+    -->
 
-   <adminconsole>
-      <tab id="tab-server">
-         <sidebar id="sidebar-server-settings">
-            <item id="example-plugin-page" name="Example Plugin Properties" url="exampleplugin-page.jsp" description="Settings for Example Plugin" />
-         </sidebar>
-      </tab>
-   </adminconsole>
+    <!-- Admin console entries -->
+    <adminconsole>
+        <tab id="tab-server">
+            <sidebar id="sidebar-server-settings">
+                <item id="example-plugin-page"
+                      name="Example Plugin Properties"
+                      url="exampleplugin-page.jsp"
+                      description="Settings for Example Plugin"/>
+            </sidebar>
+        </tab>
+    </adminconsole>
 </plugin>
