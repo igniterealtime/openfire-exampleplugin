@@ -1,6 +1,7 @@
 # Openfire Example Plugin
 
-This is an example plugin, written against Openfire 4.2 using the Maven build system.
+This is an example of a plugin for Openfire using the Maven build system.
+See the [Openfire Plugin Developer Guide](https://download.igniterealtime.org/openfire/docs/latest/documentation/plugin-dev-guide.html).
 
 ## CI Build Status
 
