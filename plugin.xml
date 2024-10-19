@@ -3,7 +3,7 @@
 <plugin>
     <!-- Main plugin class -->
     <class>org.igniterealtime.openfire.exampleplugin.ExamplePlugin</class>
-    <!-- Plugin meta-data -->
+    <!-- Plugin metadata -->
     <name>${project.name}</name>
     <description>${project.description}</description>
     <author>${project.developers[0].name}</author>
