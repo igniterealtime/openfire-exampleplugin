@@ -10,7 +10,8 @@
     <version>${project.version}</version>
     <!-- set release date here -->
     <date>2024-09-12</date>
-    <minServerVersion>4.0.0</minServerVersion>
+    <!-- Minimal supported Openfire version, same as Maven "plugins" parent pom -->
+    <minServerVersion>${project.parent.version}</minServerVersion>
     <!-- And if it won't work after:
     <priorToServerVersion>4.3.0</priorToServerVersion>
     -->
