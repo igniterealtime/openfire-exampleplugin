@@ -6,11 +6,11 @@
     <parent>
         <groupId>org.igniterealtime.openfire</groupId>
         <artifactId>plugins</artifactId>
-        <version>4.9.0</version>
+        <version>5.0.0</version>
     </parent>
     <groupId>org.igniterealtime.openfire.plugins</groupId>
     <artifactId>exampleplugin</artifactId>
-    <version>4.9.0-SNAPSHOT</version>
+    <version>5.0.0-SNAPSHOT</version>
     <name>Openfire Plugin Example</name>
     <description>An example plugin that adds own tab to Admin Console</description>
     <issueManagement>
@@ -42,7 +42,7 @@
         </license>
     </licenses>
     <properties>
-        <openfire.version>4.9.0</openfire.version>
+        <openfire.version>5.0.0</openfire.version>
     </properties>
 
     <repositories>
@@ -72,8 +72,8 @@
 
             <!-- Compiles the Openfire Admin Console JSP pages. -->
             <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-jspc-maven-plugin</artifactId>
+                <groupId>org.eclipse.jetty.ee8</groupId>
+                <artifactId>jetty-ee8-jspc-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
