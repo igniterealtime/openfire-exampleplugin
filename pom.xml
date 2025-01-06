@@ -68,66 +68,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.igniterealtime.openfire.plugins</groupId>
-                        <artifactId>openfire-plugin-assembly-descriptor</artifactId>
-                        <version>${openfire.version}</version>
-                    </dependency>
-                </dependencies>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <appendAssemblyId>false</appendAssemblyId>
-                            <finalName>${project.artifactId}</finalName>
-                            <attach>false</attach>
-                            <descriptorRefs>
-                                <descriptorRef>openfire-plugin-assembly</descriptorRef>
-                            </descriptorRefs>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
 
-            <!-- Admin console pages -->
+            <!-- Compiles the Openfire Admin Console JSP pages. -->
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-jspc-maven-plugin</artifactId>
-                <configuration>
-                    <webAppSourceDirectory>${project.build.sourceDirectory}/../web</webAppSourceDirectory>
-                    <webXml>${project.build.sourceDirectory}/../web/WEB-INF/web.xml</webXml>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>jspc</id>
-                        <goals>
-                            <goal>jspc</goal>
-                        </goals>
-                        <configuration>
-                            <jspc>
-                                <package>org.jivesoftware.openfire.plugin.${project.artifactId}</package>
-                            </jspc>
-                        </configuration>
-                    </execution>
-                </executions>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.igniterealtime.openfire</groupId>
-                        <artifactId>xmppserver</artifactId>
-                        <version>${openfire.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <version>3.0.0</version>
-                <extensions>true</extensions>
             </plugin>
         </plugins>
     </build>
