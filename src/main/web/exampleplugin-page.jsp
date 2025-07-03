@@ -19,7 +19,7 @@
     final String csrfParam = ParamUtils.getParameter( request, "csrf" );
     final String exampleText = ParamUtils.getParameter( request, "exampletext" );
 
-    final ExamplePlugin plugin = (ExamplePlugin) XMPPServer.getInstance().getPluginManager().getPlugin( "exampleplugin" );
+    final ExamplePlugin plugin = (ExamplePlugin) XMPPServer.getInstance().getPluginManager().getPluginByName( "Openfire Plugin Example" ).orElseThrow();
 
     final Map<String, String> errors = new HashMap<>();
     if ( save ) {
