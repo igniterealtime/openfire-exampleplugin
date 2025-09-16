@@ -42,7 +42,7 @@
         </license>
     </licenses>
     <properties>
-        <openfire.version>5.0.0</openfire.version>
+        <openfire.version>5.0.2</openfire.version>
     </properties>
 
     <repositories>
